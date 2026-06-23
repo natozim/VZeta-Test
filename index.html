@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VZeta | Innovación y Tecnología</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #dbeafe;
+        }
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            font-size: 1.2rem;
+            color: #cbd5e1;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: #2563eb;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+        }
+
+        .services {
+            padding: 80px 10%;
+            background: #111827;
+        }
+
+        .services h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #1f2937;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #60a5fa;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #0b1120;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">VZeta</div>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <h1>Impulsamos la innovación digital</h1>
+    <p>
+        En VZeta desarrollamos soluciones tecnológicas modernas para ayudar
+        a empresas y organizaciones a crecer en un mundo cada vez más digital.
+    </p>
+    <a href="#servicios" class="btn">Conocer más</a>
+</section>
+
+<section class="services" id="servicios">
+    <h2>Nuestros Servicios</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Desarrollo Web</h3>
+            <p>Creación de sitios web rápidos, modernos y adaptados a cualquier dispositivo.</p>
+        </div>
+
+        <div class="card">
+            <h3>Cloud & DevOps</h3>
+            <p>Automatización, despliegues continuos e infraestructura escalable.</p>
+        </div>
+
+        <div class="card">
+            <h3>Consultoría TI</h3>
+            <p>Asesoría especializada para optimizar procesos y recursos tecnológicos.</p>
+        </div>
+    </div>
+</section>
+
+<footer id="contacto">
+    <p>&copy; 2026 VZeta. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
